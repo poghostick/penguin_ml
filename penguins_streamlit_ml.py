@@ -41,7 +41,7 @@ else:
     score = round(accuracy_score(y_pred, y_test), 2)
     st.write('We trained a Random Forest model on these data,'
              'it has a score of {}! Use the inputs below to'
-             'try out the model.').format(score)
+             'try out the model.'.format(score))
 
 with st.form('user_inputs'):
     island = st.selectbox('Penguin Island', options=[
